@@ -291,7 +291,7 @@ class ProductCategoryResourceIT {
         ProductCategory partialUpdatedProductCategory = new ProductCategory();
         partialUpdatedProductCategory.setId(productCategory.getId());
 
-        partialUpdatedProductCategory.description(UPDATED_DESCRIPTION);
+        partialUpdatedProductCategory.name(UPDATED_NAME).description(UPDATED_DESCRIPTION);
 
         restProductCategoryMockMvc
             .perform(

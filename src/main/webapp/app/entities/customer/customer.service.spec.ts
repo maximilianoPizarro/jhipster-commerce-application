@@ -108,10 +108,9 @@ describe('Service Tests', () => {
 
       it('should partial update a Customer', async () => {
         const patchObject = {
-          firstName: 'BBBBBB',
-          gender: 'BBBBBB',
-          email: 'BBBBBB',
+          lastName: 'BBBBBB',
           phone: 'BBBBBB',
+          addressLine1: 'BBBBBB',
           addressLine2: 'BBBBBB',
           city: 'BBBBBB',
           country: 'BBBBBB',

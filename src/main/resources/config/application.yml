@@ -95,7 +95,7 @@ spring:
     name: jhipsterCommerce
   docker:
     compose:
-      enabled: true
+      enabled: false
       lifecycle-management: start-only
       file: src/main/docker/services.yml
   profiles:
@@ -149,7 +149,7 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: http://localhost:9080/realms/jhipster
+            issuer-uri: https://sso.apps.rm2.thpm.p1.openshiftapps.com/realms/jhipster
         registration:
           oidc:
             client-id: web_app

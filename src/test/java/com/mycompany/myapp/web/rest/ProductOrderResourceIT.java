@@ -393,7 +393,7 @@ class ProductOrderResourceIT {
         ProductOrder partialUpdatedProductOrder = new ProductOrder();
         partialUpdatedProductOrder.setId(productOrder.getId());
 
-        partialUpdatedProductOrder.status(UPDATED_STATUS).code(UPDATED_CODE).invoiceId(UPDATED_INVOICE_ID);
+        partialUpdatedProductOrder.placedDate(UPDATED_PLACED_DATE).status(UPDATED_STATUS).code(UPDATED_CODE).invoiceId(UPDATED_INVOICE_ID);
 
         restProductOrderMockMvc
             .perform(

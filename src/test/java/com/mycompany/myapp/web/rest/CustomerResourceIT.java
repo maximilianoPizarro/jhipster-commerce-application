@@ -54,8 +54,8 @@ class CustomerResourceIT {
     private static final Gender DEFAULT_GENDER = Gender.MALE;
     private static final Gender UPDATED_GENDER = Gender.FEMALE;
 
-    private static final String DEFAULT_EMAIL = "l&nu!@/.B2sM";
-    private static final String UPDATED_EMAIL = "GgF|kp@+xC-B.uU;z^}";
+    private static final String DEFAULT_EMAIL = "~W-JhS@OgJv82.e";
+    private static final String UPDATED_EMAIL = "^x!@agf\\!n.h.gy";
 
     private static final String DEFAULT_PHONE = "AAAAAAAAAA";
     private static final String UPDATED_PHONE = "BBBBBBBBBB";
@@ -508,14 +508,7 @@ class CustomerResourceIT {
         Customer partialUpdatedCustomer = new Customer();
         partialUpdatedCustomer.setId(customer.getId());
 
-        partialUpdatedCustomer
-            .firstName(UPDATED_FIRST_NAME)
-            .gender(UPDATED_GENDER)
-            .email(UPDATED_EMAIL)
-            .phone(UPDATED_PHONE)
-            .addressLine2(UPDATED_ADDRESS_LINE_2)
-            .city(UPDATED_CITY)
-            .country(UPDATED_COUNTRY);
+        partialUpdatedCustomer.firstName(UPDATED_FIRST_NAME).gender(UPDATED_GENDER).city(UPDATED_CITY);
 
         restCustomerMockMvc
             .perform(
